@@ -2,9 +2,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['loggedAs'])) {
-    header('Location: index.php?page=login');
-}
+
 
 if ($_GET['page'] == 'disconnect') {
     unset($_SESSION['loggedAs']);
